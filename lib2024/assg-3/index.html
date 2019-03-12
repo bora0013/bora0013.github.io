@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+		<section id="html-forms" class="main-section">
+			
+			<form action="somepage.php" method="get">
+				<div id="fn-container" class="form-elm">
+					
+					<label for="FirstName">First name</label>
+					<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here">
+				</div>
+				<div id="ln-container" class="form-elm">
+					<label for="LastName">Last Name</label>
+					
+					<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here">
+				</div>
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" value="notporn@nxnn.com" readonly>
+				</div>
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password</label>
+					<input type="password" name="pass" id="pass" required>
+				</div>
+
+				<div id="intro-container" class="form-elm">
+					<label for="introduction">Introduce Yourself</label>
+					<textarea name="intro" id="intro" placeholder="Enter intro here">
+						This is the value of text area
+					</textarea>
+					<br>
+					<label for="dte">Your Birthdate?</label>
+					<input type="date" name="dte" id="dte">
+				</div>
+				<div id="ln-container" class="form-elm">
+					<label for="Phone">Phone Number</label>
+					
+					<input type="text" name="phone" id="Phone-number" placeholder="(XXX)XXX-XXXX">
+				</div>
+
+				<div id="radio-container" class="form-elm">
+					<p>Gender?</p>
+					<label for="male">
+						<input type="radio" name="gender" id="male" value="male" checked>
+						Male
+					</label>
+					<label for="female">
+						<input type="radio" name="gender" id="female" value="female">
+						Female
+					</label>
+				</div>
+
+
+				<div id="home" class="form-elm">
+					<h3>Home address:</h3>
+					
+				<div id="street-name" class="form-elm">
+					
+					<label for="street-name">address</label>
+					<input type="text" name="address" id="address" placeholder="123 fakestreet">
+				</div>
+				<div id="ln-container" class="form-elm">
+					<label for="city">City</label>
+					
+					<input type="text" name="city" id="City" placeholder="Enter your City here">
+				</div>
+
+				<div id="og-contianer" class="form-elm">
+					<label for="Province">Province</label>
+					<select id="Province" name="Province">
+						<optgroup label="Provinces">
+							
+							<option value=" Ontario">Ontario</option>
+							<option value="BC">British Columbia</option>
+							<option value="Quebec">Quebec</option>
+							<option value="Alberta">Alberta</option>
+							<option value="Nova-Scotia">Nova Scotia</option>
+							<option value="Manitoba">Manitoba</option>
+							<option value="New-Brunswick">New Brunswick</option>
+						</optgroup>
+					</select>
+				</div>
+					
+			<div id="og-contianer" class="form-elm">
+					<label for="Country">Country</label>
+					<select id="Country" name="Country">
+						<optgroup label="Country">
+							
+							<option value="Canada">Canada</option>
+							<option value="USA">United States</option>
+							<option value="Mexico">Mexico</option>
+							<option value="other">other</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<div id="ln-container" class="form-elm">
+					<label for="postal-code">Postal Code</label>
+					
+					<input type="text" name="postal-code" id="postal-code" placeholder="XXX XXX">
+				</div>
+
+					<div id="hobbies-container" class="form-elm">
+					<h3>Hobbies:</h3>
+					<label for="reading">Reading</label>
+					
+					<input type="checkbox" name="hobbie" id="reading" value="reading"> <br>
+
+					<label for="boxing">Boxing</label>
+					<input type="checkbox" name="hobbie" id="boxing" value="boxing"> <br>
+
+					<label for="coding">Coding</label>
+					<input type="checkbox" name="hobbie" id="coding" value="coding"> <br>
+
+					<label for="baking">Baking
+						<input type="checkbox" name="hobbie" id="baking" value="baking" >
+						
+					</label> <br>
+					<label for="ur">Enter a URL:</label>	
+					<input type="url" name="ur" id="ur" ><br>
+					<br>
+				</div>
+					
+				</div>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
