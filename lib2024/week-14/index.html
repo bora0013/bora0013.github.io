@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>final web page</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+	<div class="overlay-container loader-container">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header start -->
+	<header class="site-header clearfix" id="site-header">
+		<div class="logo">Logo</div>
+
+		<!-- main navigation start -->
+		<nav class="main-nav-container desktop-nav">
+			<ul class="main-nav clearfix">
+				<li>
+					<a href="contact-us.html">Home</a>
+				</li>
+				<li>
+					<a href="about-us.html">About </a>
+					<ul class="sub-nav">
+						<li>
+							<a href="team.html">Portfolio</a>
+						</li>
+						<li>
+							<a href="history.html">History</a>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<a href="images.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="contact-us.html">Contact </a>
+				</li>
+				<li>
+					<a href="contact-us.html">Schedule</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- main navigation end -->
+		<div class="ham"></div>
+		<!-- mobile navigation start -->
+		<div class="mobile-nav-container clearfix">
+			<nav class="main-nav-container mobile-nav">
+			<ul class="main-nav">
+				<li>
+					<a href="contact-us.html">Contact Us</a>
+				</li>
+				<li>
+					<a href="about-us.html">About Us</a>
+				</li>
+				<li>
+					<a href="images.html">Images</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+		<!-- mobile navigation end -->
+	</header>
+	<!-- header end -->
+	<!-- main start -->
+	<main class="main clearfix" id="main">
+		<!-- site content start -->
+		<article class="col-main site-content">
+			<!-- main content start -->
+			<section class="main-content">
+				<h2>Site content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.</p>
+			</section>
+			<h2>Colors:</h2>
+				<style> table, th, td  
+				</style>
+				<table id="table" style="width:"1200" height"300">
+			  <tr>
+			    <th>Color</th>
+			    <th>Used for</th> 
+			    <th>Used as</th>
+			    <th>Hex Value</th>
+			    <th>RGB Value</th>
+			    <th>Opacity</th>
+			  </tr>
+			  <tr>
+			    <td>Black</td>
+			    <td>text</td> 
+			    <td> Primary </td>
+			    <td>#00030a</td>
+			    <td>(0,3,10)</td>
+			    <td>1</td>
+			  </tr>
+			  <tr>
+			    <td>purple</td>
+			    <td>Background</td> 
+			    <td> Primary</td>
+			    <td>#b39ddb</td>
+			    <td>(179,157,219)</td>
+			    <td>1</td>
+			  </tr>
+			  <tr>
+			    <td>yellow</td>
+			    <td>backround</td> 
+			    <td>Accent </td>
+			    <td>#f9d57d</td>
+			    <td>(249,213,125)</td>
+			    <td>1</td>
+			  </tr>
+			  
+				</table>
+			<!-- main content end -->
+			<!-- image gallery start -->
+			<section class="image-gallery">
+				<h3>Image Gallery</h3>
+				<div class="image-gallery-thumb-container clearfix">
+					<div class="img-slide-thumb img-slide-thumb-active">
+						<img src="images/gallery-img-1.jpg" alt="Gallery Image 1">
+					</div>
+					<div class="img-slide-thumb">
+						<img src="images/gallery-img-2.jpg" alt="Gallery Image 2">
+					</div>
+					<div class="img-slide-thumb">
+						<img src="images/gallery-img-3.jpg" alt="Gallery Image 3">
+					</div>
+				</div>
+			</section>
+			<!-- image gallery end -->
+			<section class="js-basics clearfix">
+				<h4>JS basics</h4>
+				<div id="color-1" class="js-color"></div>
+				<div id="color-2" class="js-color"></div>
+				<div id="color-3" class="js-color"></div>
+				<div id="indicator-text"></div>
+				<button class="reset">Reset</button>
+			</section>
+
+			<br>
+			<section class="form-value-transfer clearfix">
+				<form id="form" action="submit.php" method="post">
+					<p>
+						<label>Name</label>
+						<input type="text" name="name" id="name">
+					</p>
+					<p>
+						<label>Postal Code</label>
+						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
+					</p>
+
+					<p>
+						<label>Email</label>
+						<input type="email" required name="email" id="email">
+					</p>
+
+					<button type="submit">Submit</button>
+				</form>
+
+				<div id="results">
+					<h2>Show values</h2>
+					<p >Name: <span id="name_result"></span></p>
+					<p >Postal Code: <span id="pc_result"></span></p>
+					<p >Email: <a href="#" id="email_result"></a></p>
+				</div>
+			</section>
+
+			<br>
+			<button id="loadTable">Load Table</button>
+			<section>
+				<div id="json_table">
+					
+				</div>
+			</section>
+		</article>
+		<!-- site content end -->
+		<!-- site sidebar start -->
+		<aside class="col-main site-sidebar">
+			<h4>Sidebar</h4>
+			<nav class="sidebar-nav-container">
+				<ul class="sidebar-nav">
+					<li>
+						<a href="https://google.com">Google</a>
+					</li>
+					<li>
+						<a href="https://wikipedia.com">Wikipedia</a>
+					</li>
+					<li>
+						<a href="https://w3schools.com">W3Schools</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<!-- site sidebar end -->
+	</main>
+	<!-- main end -->
+	<!-- footer start -->
+	<footer class="footer" id="footer">
+		<div class="footer-container">
+			<section class="col-footer company-info">
+				<h4>Comapny info</h4>
+				<address>
+					<p>1385 Woodroffe Avenue</p>
+					<p>Ottawa, ON K2G 1V8</p>
+				</address>
+			</section>
+
+			<section class="col-footer links">
+				<h4>Links</h4>
+				<nav>
+					<ul>
+						<li>
+							<a href="contact-us.html">Contact Us</a>
+						</li>
+						<li>
+							<a href="about-us.html">About Us</a>
+						</li>
+						<li>
+							<a href="images.html">Images</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+
+			<section class="col-footer social-media">
+				<h4>Social Media</h4>
+				<nav>
+					<ul>
+						<li>
+							<a href="facebook.com">Facebook</a>
+						</li>
+						<li>
+							<a href="twitter.com">Twitter</a>
+						</li>
+						<li>
+							<a href="instagram.com">Instagram</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+
+		<p>Copyright &copy; Responsive CSS 2018</p>
+	</footer>
+	<!-- footer end -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- script tag is not a self closing tag so it requires </script> to close itself -->
+	<!-- To add an external script file, script tag is used with src attribute containing the path of the script that we would like to include in this document -->
+	<script type="text/javascript" src="scripts/script.js"></script>
+
+	<!-- script tag is an embeded way of adding javascript to your document -->
+	<!-- Script tag must be added at the bodttom of your HTML file before the closing of <body> tag -->
+	<!-- This will make sure that all the elements are properly loaded and ready for javascript to interact with them -->
+
+	<script type="text/javascript">
+		document.querySelector('.logo').style.backgroundColor="red";
+	</script>
+
+</body>
+</html>
