@@ -46,7 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+body {
+    font-family: 'ABeeZee';font-size: ;
+}
+aside {
+    font-family: 'Bilbo Swash Caps';font-size: ;
+}
 /*CSS clearfix*/
 
 .clearfix:after {
@@ -56,22 +61,6 @@ table {
 }
 
 
-/*
-	Color Pallete
-
-	Primary Blue : #1976D2;
-	Light blue : #BBDEFB;
-	Primary Text : #212121;
-	Gray : #757575;
-	Orange : #FF5722;
-	Red : #F44336;
-	Yellow : #FFEB3B;
-*/
-
-/************************
-		MOBILE FIRST
-************************/
-
 /*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
 .col-main, .col-footer, img {
 	width:100%;
@@ -79,16 +68,14 @@ table {
 
 /* Header styles */ 
 header {
-	background: #757575;
+	background: black;
 
 }
 
 .logo {
 	float: left;
 	width:120px;
-	padding: 15px;
-	box-sizing: border-box;
-	background: #1976D2;
+	background: #ff00ff;
 	/*box-sizing border box makes the width adjust according to padding*/
 }
 
@@ -107,9 +94,9 @@ header {
 
 .desktop-nav li {
 	box-sizing: border-box;
-	width: 12%;
+	width: 20%;
 	float: left;
-	background: #F44336;
+	background:#ff00ff ;
 	margin: 
 	/*This is required to make sub-nav positioned absolute to the main navigation li containers*/
 	position: relative;
@@ -117,7 +104,7 @@ header {
 
 /*Target the first child and add border-top-left, border-bottom-left radius*/
 .desktop-nav li:first-child {
-	border-radius: 10px 0 0 10px;
+	border-radius: 0px 0 0 0px;
 }
 
 
@@ -143,7 +130,7 @@ header {
 
 .desktop-nav li .sub-nav li a {
 
-	background: #BBDEFB;
+	background: #ff00ff;
 	border-left: none;
 	border-bottom: 2px solid #444;
 }
@@ -217,25 +204,31 @@ header {
 	width:100%;
 	padding: 10px;
 	background: lightgreen;
-	border-bottom: 2px solid #121212;
+	border-bottom: 2px solid #003399;
 
 }
 
 
 
 /*main content styles*/
+.main-content {
+width:67%;	
+
+}
+
+	
 
 .site-content {
 
 	background-image: url(../img/prism.png);
 	padding: 15px;
 	width:100%;
-	box-sizing: border-box;
+	
 	color: #f442d1
 }
 
 .site-sidebar {
-	background: #1976D2;
+	background-color: black
 	padding: 15px;
 	width: 100%;
 	box-sizing: border-box;
@@ -245,34 +238,33 @@ header {
 	width: 30%;
 	margin: 1%;
 	height: 150px;
-	background: blue;
 	float: left;
 }
 
 /*footer styles*/
 footer {
-	background: #F44336;
+	background: #ff00ff;
 	padding: 15px;
 	width: 100%;
 	box-sizing: border-box;
 }
 
 .company-info {
-	background: #1976D2;
+	background: ;
 }
 
 .links {
-	background: #FFEB3B;
+	background:;
 }
 
 .social-media {
-	background: #757575;
+	background: ;
 }
 
 /*This media query will only target the tablet size*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	header {
-		background: #FFEB3B;
+		background:#ff00ff ;
 	}
 }
 
@@ -285,7 +277,7 @@ footer {
 	/*This is to make sure the main content is in the readbable area for large screen sizes*/
 	header, main, footer {
 
-		max-width: 1280px;
+		max-width: 1500px;
 		margin: 0 auto;
 
 	}
@@ -333,22 +325,17 @@ footer {
 
 	.site-content {
 		float: left;
-		width: 70%;
+		width: 100%;
 		box-sizing: border-box;
 	}
 
-	.site-sidebar {
-		float: left;
-		width: 30%;
-		box-sizing: border-box;
-	}
-
+	
 	/*reducing opacity for the img-slide-thumb inactive elements*/
 	.image-gallery .img-slide-thumb {
 		width: 33%;
 		padding: 10px;
 		box-sizing: border-box;
-		float: left;
+		float: right;
 		box-shadow: none;
 	}
 
@@ -384,13 +371,15 @@ footer {
 		padding: 10px;
 		float: left;
 	}
+	.results{float: right;
+	}}
 }
 
 
 
 table, th, td 
         {
-            border: solid 1px #DDD;
+            border: solid 3px #DDD;
             border-collapse: collapse;
             padding: 2px 3px;
             text-align: center;
@@ -478,19 +467,7 @@ table, th, td
 		}
 
 		/*This @keyframes declaration will change the color from blue to orange to blue */
-		@keyframes change-color {
-			/*0 % is begining*/
-			0% {
-				border-top-color: #3498db;
-			}
-
-			/*50% is the middle*/
-			50% {
-				border-top-color: #FF5722;
-			}
-			/*100% is ending*/
-			100% {
-				border-top-color: #3498db;
+	
 			}
 		}
 
@@ -510,3 +487,4 @@ table, th, td
 				border-radius: 50%;
 			}
 		}
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
